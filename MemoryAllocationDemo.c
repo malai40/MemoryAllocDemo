@@ -33,7 +33,7 @@ void print_arr(int *int_arr, int arr_size)
 // Number of holes in physical memory.
 int get_M()
 {
-	char line[100];
+	char line[12]; //12 is max # of digits of Int incl. newline char
 	int m_int;
 	printf ("How many holes in memory are there (what is M)?: ");
 	fgets (line, sizeof(line), stdin);
@@ -46,7 +46,7 @@ int get_M()
 // Number of processes that need to be assigned memory
 int get_N()
 {
-	char line[100];
+	char line[12];
 	int n_int;
 	printf ("How many processes need to be assigned memory (what is N)?: ");
 	fgets (line, sizeof(line), stdin);
@@ -58,7 +58,7 @@ int get_N()
 // Minimum size of blocks
 int get_min_size_block()
 {
-	char line[100];
+	char line[12];
 	int min_size;
 	printf ("What is minimum size of blocks? ");
 	fgets (line, sizeof(line), stdin);
@@ -70,7 +70,7 @@ int get_min_size_block()
 // Maximum size of blocks
 int get_max_size_block()
 {
-	char line[100];
+	char line[12];
 	int max_size;
 	printf ("What is maximum size of blocks? ");
 	fgets (line, sizeof(line), stdin);
